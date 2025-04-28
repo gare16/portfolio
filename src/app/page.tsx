@@ -6,8 +6,6 @@ import { ProjectSection } from "@/components/sections/projects";
 import { SkillSection } from "@/components/sections/skills";
 import WorkSection from "@/components/sections/work";
 
-export const BLUR_FADE_DELAY = 0.04;
-
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] items-center div">

@@ -1,9 +1,9 @@
-import { BLUR_FADE_DELAY } from "@/app/page";
 import BlurFadeText from "../magicui/blur-fade-text";
 import { DATA } from "@/data/resume";
 import BlurFade from "../magicui/blur-fade";
 import Image from "next/image";
 import Link from "next/link";
+import { BLUR_FADE_DELAY } from "@/data/blur";
 
 const HeroSection = () => {
   return (

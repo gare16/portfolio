@@ -1,6 +1,6 @@
 import React from "react";
 import BlurFade from "../magicui/blur-fade";
-import { BLUR_FADE_DELAY } from "@/app/page";
+import { BLUR_FADE_DELAY } from "@/data/blur";
 import { DATA } from "@/data/resume";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
