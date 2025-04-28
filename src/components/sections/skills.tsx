@@ -8,7 +8,7 @@ import Image from "next/image";
 export const SkillSection = () => {
   return (
     <section
-      className="md:w-full lg:w-[150dvh] flex justify-center mt-5 md:ms-5 lg:ms-0"
+      className="md:w-full lg:w-[150dvh] flex justify-center mt-5 ms-5"
       id="skills"
     >
       <div className="flex flex-col gap-y-3">
@@ -16,7 +16,7 @@ export const SkillSection = () => {
           <h2 className="text-4xl font-bold">Skills</h2>
         </BlurFade>
         <div className="md:w-full lg:w-[150dvh] flex justify-center">
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap gap-5 py-10">
             {DATA.skills.map((skill, id) => (
               <BlurFade
                 key={skill.alt}

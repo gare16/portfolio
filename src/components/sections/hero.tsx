@@ -24,7 +24,7 @@ const HeroSection = () => {
             text={DATA.description}
             className="text-justify text-muted max-w-full md:max-w-72"
           />
-          <div className="w-16 md:w-20 h-2 bg-destructive border border-destructive rounded-r-lg rounded-b-lg ms-2"></div>
+          <div className="mt-10 w-16 md:w-20 h-2 bg-destructive border border-destructive rounded-r-lg rounded-b-lg ms-2"></div>
         </div>
         {/* right */}
         <div className="flex flex-col justify-center w-full md:w-1/2 min-h-[40dvh] gap-6 md:gap-4">

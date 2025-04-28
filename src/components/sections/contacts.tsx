@@ -14,10 +14,11 @@ const ContactSection = () => {
               Get in Touch
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Want to chat? Just shoot me an email{" "}
+              I&apos;m open to freelance work, collaborations, or just nerdy
+              tech talk. Drop me a message and I&apos;ll get back to you asap!{" "}
               <Link
                 href={`mailto:${DATA.contact.email}`}
-                className="text-blue-500 hover:underline"
+                className="text-destructive hover:underline"
               >
                 {DATA.contact.email}
               </Link>{" "}
