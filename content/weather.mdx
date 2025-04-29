@@ -1,0 +1,26 @@
+---
+title: "Weather API – Website Data Report"
+publishedAt: "2024-12-01"
+description: "A weather app provides real-time information about current weather conditions, forecasts, and severe weather alerts."
+image: "/portfolio/weather-app1.png"
+---
+
+Proyek ini merupakan pengembangan sistem monitoring cuaca real-time berbasis aplikasi mobile yang terintegrasi dengan perangkat Internet of Things (IoT). Saya bertanggung jawab penuh dalam merancang dan membangun solusi end-to-end, mulai dari pengembangan perangkat keras, integrasi komunikasi data, hingga aplikasi mobile yang menampilkan data secara langsung kepada pengguna.
+
+Di sisi hardware, saya menggunakan ESP8266 NodeMCU sebagai mikrokontroler utama yang mengatur komunikasi dengan berbagai sensor lingkungan. Sensor yang digunakan meliputi Raindrop Sensor untuk mendeteksi keberadaan dan intensitas hujan, serta GPS Neo 6M v2 yang digunakan untuk mendapatkan koordinat lokasi pengambilan data secara akurat. Semua data dari sensor dikumpulkan oleh ESP8266 dan dikirim secara berkala melalui protokol MQTT ke broker server.
+
+![Weather API](/portfolio/weather-app1.png "Weather API")
+
+Protokol MQTT (Message Queuing Telemetry Transport) dipilih karena ringan, efisien, dan sangat cocok untuk komunikasi IoT dalam jaringan bandwidth rendah. Dengan menggunakan MQTT broker, data sensor dikirim ke backend server yang saya bangun menggunakan Node.js dan Express.js, kemudian disimpan ke MongoDB. Saya juga membangun sistem penjadwalan dan validasi data untuk memastikan integritas serta kontinuitas pembacaan dari perangkat.
+
+Untuk sisi frontend, saya mengembangkan aplikasi mobile dengan Flutter, yang mampu menampilkan data cuaca secara real-time melalui koneksi API yang saya bangun. Antarmuka pengguna dibuat intuitif dengan tampilan grafik tren cuaca harian dan mingguan. Data yang ditampilkan meliputi suhu, kelembaban, curah hujan, serta posisi geografis perangkat berdasarkan GPS.
+
+![Weather API](/portfolio/weather-app2.png "Weather API")
+
+Aplikasi ini juga dilengkapi fitur notifikasi cuaca ekstrem, seperti hujan deras atau lonjakan kelembaban yang mendadak, yang dapat membantu pengguna dalam mengambil keputusan atau tindakan preventif. Saya juga mengembangkan fitur log histori data, sehingga pengguna dapat melihat perubahan kondisi cuaca dari waktu ke waktu.
+
+Salah satu tantangan utama dalam proyek ini adalah menjaga konektivitas stabil antara ESP8266 dan server, serta menangani kasus sensor error atau data corrupt. Saya menyelesaikannya dengan membuat sistem retry otomatis dan validasi di level perangkat serta server.
+
+![Weather API](/portfolio/iot.png "Weather API")
+
+Proyek ini berhasil menunjukkan integrasi yang harmonis antara hardware, software, dan komunikasi jaringan dalam konteks monitoring lingkungan, dan memperkuat pemahaman saya dalam pengembangan solusi IoT skala kecil hingga menengah.

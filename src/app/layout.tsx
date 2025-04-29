@@ -53,7 +53,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased w-full"
+          "min-h-screen bg-background font-sans antialiased w-full flex justify-center"
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">

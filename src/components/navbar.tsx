@@ -47,6 +47,7 @@ const BottomPosition = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
+                    target="_blank"
                     href={social.url}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
@@ -111,6 +112,7 @@ const LeftPosition = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
+                    target="_blank"
                     href={social.url}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),

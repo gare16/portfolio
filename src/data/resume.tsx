@@ -63,6 +63,12 @@ export const DATA = {
     email: "me@garee.pro",
     tel: "+6287848723491",
     social: {
+      Instagram: {
+        name: "Instagram",
+        url: "https://instagram.com/gareeeeds",
+        icon: Icons.instagram,
+        navbar: true,
+      },
       GitHub: {
         name: "GitHub",
         url: "https://github.com/gare16",
@@ -82,13 +88,13 @@ export const DATA = {
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
 
-        navbar: true,
+        navbar: false,
       },
       Youtube: {
         name: "Youtube",
         url: "https://dub.sh/dillion-youtube",
         icon: Icons.youtube,
-        navbar: true,
+        navbar: false,
       },
       email: {
         name: "Send Email",
