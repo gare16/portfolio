@@ -16,34 +16,29 @@ interface CardProps {
 
 export default function CardBlog({ post, id }: CardProps) {
   return (
-    <div className="hover:scale-105">
-      <BlurFade
-        delay={BLUR_FADE_DELAY * 2 + id * 0.05}
-        key={post.slug}
-        className="max-w-[300px] flex"
-      >
-        <Link
-          className="flex flex-col space-y-1 mb-4"
-          href={`/blog/${post.slug}`}
-        >
-          <div className="w-full flex flex-col gap-2">
+    <>
+      <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>
+        <Link href={`/blog/${post.slug}`}>
+          <div className="relative w-full h-60 me-4 md:h-96">
             <Image
-              width={300}
-              height={300}
               src={post.metadata.image}
               alt={post.metadata.title}
-              className="h-40 w-full overflow-hidden"
+              className="w-full h-full object-cover"
+              width={400}
+              height={600}
             />
-            <p className="tracking-tight">{post.metadata.title}</p>
-            <p className="line-clamp-1 text-muted">
+          </div>
+          <div className="mt-2 mb-5">
+            <h2 className="text-xl md:text-2xl font-bold">
+              {post.metadata.title}
+            </h2>
+            <p className="line-clamp-1 text-sm text-gray-400">
               {post.metadata.description}
             </p>
-            <p className="h-6 text-xs text-muted-foreground">
-              {post.metadata.publishedAt}
-            </p>
+            <p className="text-sm text-gray-500">{post.metadata.publishedAt}</p>
           </div>
         </Link>
       </BlurFade>
-    </div>
+    </>
   );
 }
