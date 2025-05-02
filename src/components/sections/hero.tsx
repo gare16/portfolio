@@ -1,14 +1,13 @@
 import BlurFadeText from "../magicui/blur-fade-text";
 import { DATA } from "@/data/resume";
 import BlurFade from "../magicui/blur-fade";
-import Image from "next/image";
-import Link from "next/link";
 import { BLUR_FADE_DELAY } from "@/data/blur";
+import { ButtonResume } from "../dropdown/button-resume";
 
 const HeroSection = () => {
   return (
     <section
-      className="w-full flex justify-center bg-secondary min-h-[70dvh]"
+      className="w-full flex justify-center bg-background min-h-[100dvh]"
       id="hero"
     >
       <div className="w-full flex flex-col md:flex-row min-h-[70dvh] md:mx-20 lg:mx-56 gap-10 md:gap-2 px-4 md:px-0">
@@ -43,6 +42,9 @@ const HeroSection = () => {
             text={DATA.summary}
             className="text-justify text-muted max-w-full md:max-w-72"
           />
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <ButtonResume />
+          </BlurFade>
         </div>
       </div>
     </section>
