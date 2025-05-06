@@ -24,7 +24,7 @@ export const ProjectSection = () => {
         </BlurFade>
         <div className="flex justify-center">
           <a
-            href="/blog"
+            href="/project"
             className="relative inline-flex w-72 items-center px-12 py-3 overflow-hidden text-lg font-medium text-destructive group"
           >
             <span className="absolute inset-0 w-full h-full bg-destructive transform scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 z-0"></span>
