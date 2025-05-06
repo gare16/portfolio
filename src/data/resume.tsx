@@ -57,7 +57,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/project", icon: NotebookIcon, label: "Project" },
   ],
   contact: {
     email: "me@garee.pro",

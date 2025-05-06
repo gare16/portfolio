@@ -18,7 +18,7 @@ export default function CardBlog({ post, id }: CardProps) {
   return (
     <>
       <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>
-        <Link href={`/blog/${post.slug}`}>
+        <Link href={`/project/${post.slug}`}>
           <div className="relative w-full h-60 me-4 md:h-96">
             <Image
               src={post.metadata.image}

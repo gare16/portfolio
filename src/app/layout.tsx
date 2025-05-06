@@ -50,6 +50,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-9703112835198316"
+        ></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9703112835198316"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={cn(
