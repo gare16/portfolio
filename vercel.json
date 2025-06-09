@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "project.garee.pro" }],
+      "destination": "/project/$1"
+    }
+  ]
+}
